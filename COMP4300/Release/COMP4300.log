@@ -1,21 +1,8 @@
-﻿  main.cpp
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(73,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(73,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(73,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(85,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(85,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(85,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(95,47): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(95,42): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(95,37): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(107,50): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(107,45): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(107,40): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(123,55): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
-C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\main.cpp(123,42): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+﻿  Game.cpp
+  main.cpp
   Generating code
-  7 of 412 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
+  13 of 321 functions ( 4.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    54 functions had inline decision re-evaluated but remain unchanged
+    2 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   COMP4300.vcxproj -> C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Release\COMP4300.exe

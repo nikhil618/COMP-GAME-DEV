@@ -139,17 +139,17 @@ I recommend approaching this assignment in the following order:
 1. Save the configuration file reading until later, after Entities implemented
 1. Implement the Vec2 class, which you will use for all Components
 1. Implement the basic functionality in the EntityManager class
-Implement the EntityManager's addEntity() and update() functions so
-you can start testing the Game class quickly. Don't worry about the update()
+Implement the EntityManager's ```addEntity()``` and ```update()``` functions so
+you can start testing the Game class quickly. Don't worry about the ```update()```
 function which deletes dead entities until later when you get more game
 mechanics working.
 1. Implement basics of the Game class:
-    - Construct a player Entity using the spawnPlayer() function
-    - Implement basic drawing of entities using the Game :: sRender() function
-    - Construct some enemies using the spawnEnemy() function
-    - Construct a bullet using the spawnBullet() function
-5. Implement Player Movement in Game: : sUserInput and Game :: sMovement
-1. Implement the EntityManager :: update() function so it deletes dead entities
-1. Implement the EntityManager :: getEntities(tag) functionality
-1. Implement collisions in sCollision and entity.destroy() if it's dead
+    - Construct a player Entity using the ```spawnPlayer()``` function
+    - Implement basic drawing of entities using the ```Game::sRender()``` function
+    - Construct some enemies using the ```spawnEnemy()``` function
+    - Construct a bullet using the ```spawnBullet()``` function
+5. Implement Player Movement in ```Game::sUserInput``` and ```Game::sMovement```
+1. Implement the ```EntityManager::update()``` function so it deletes dead entities
+1. Implement the ```EntityManager::getEntities(tag)``` functionality
+1. Implement collisions in sCollision and ```entity.destroy()``` if it's dead
 1. Implement the rest of the game's functionality, including config file reading

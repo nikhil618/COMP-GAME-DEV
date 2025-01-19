@@ -1,7 +1,16 @@
 ﻿  Game.cpp
-  main.cpp
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(157,11): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(157,11): warning C4244:         with
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(157,11): warning C4244:         [
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(157,11): warning C4244:             T=unsigned int
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(157,11): warning C4244:         ]
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(158,11): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(158,11): warning C4244:         with
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(158,11): warning C4244:         [
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(158,11): warning C4244:             T=unsigned int
+C:\Users\saniks\WebstormProjects\C++ Programs\COMP4300\Game.cpp(158,11): warning C4244:         ]
   Generating code
-  13 of 321 functions ( 4.0%) were compiled, the rest were copied from previous compilation.
+  7 of 328 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     2 functions had inline decision re-evaluated but remain unchanged
   Finished generating code

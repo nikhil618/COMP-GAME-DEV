@@ -65,12 +65,11 @@ void Game::sUserInput()
 		{
 			switch (event.key.code)
 			{
-
-			case sf::Keyboard::W :
-				std::cout << "W Key Pressed\n";
-				// TODO: set player's input component "up" to true
-				break;
-			default: break;
+				case sf::Keyboard::W :
+					std::cout << "W Key Pressed\n";
+					// TODO: set player's input component "up" to true
+					break;
+				default: break;
 			}
 		}
 		
@@ -80,11 +79,11 @@ void Game::sUserInput()
 			switch (event.key.code)
 			{
 
-			case sf::Keyboard::W:
-				std::cout << "W Key Released\n";
-				// TODO: set player's input component "up" to true
-				break;
-			default: break;
+				case sf::Keyboard::W:
+					std::cout << "W Key Released\n";
+					// TODO: set player's input component "up" to true
+					break;
+				default: break;
 			}
 		}
 
@@ -115,12 +114,15 @@ void Game::sRender()
 {
 	m_window.clear();
 
-	m_player->cShape->circle.setPosition(m_player->cTransform->position.x, m_player->cTransform->position.y);
+	for (auto& e : m_entities.getEntities())
+	{
+		e->cShape->circle.setPosition(e->cTransform->position.x, e->cTransform->position.y);
 
-	m_player->cTransform->angle += 1.f;
-	m_player->cShape->circle.setRotation(m_player->cTransform->angle);
+		e->cTransform->angle += 1.f;
+		e->cShape->circle.setRotation(e->cTransform->angle);
 
-	m_window.draw(m_player->cShape->circle);
+		m_window.draw(e->cShape->circle);
+	}
 	m_window.display();
 }
 
@@ -138,7 +140,10 @@ void Game::spawnPlayer()
 {
 	auto entity = m_entities.addEntity("player");
 
-	entity->cTransform = std::make_shared<CTransform>(Vec2(200.f, 200.f), Vec2(1.f, 1.f), 0.f);
+	float mx = m_window.getSize().x / 2.f;
+	float my = m_window.getSize().y / 2.f;
+
+	entity->cTransform = std::make_shared<CTransform>(Vec2(mx, my), Vec2(0.f, 0.f), 0.f);
 
 	entity->cShape = std::make_shared<CShape>(32.f, 8, sf::Color(10, 10, 10), sf::Color(255, 0, 0), 4.f);
 
@@ -148,7 +153,16 @@ void Game::spawnPlayer()
 }
 void Game::spawnEnemy()
 {
-	// auto entity = m_entities.addEntity("enemy");
+	auto entity = m_entities.addEntity("enemy");
+	float ex = rand() % (m_window.getSize().x - 16) + 16;
+	float ey = rand() % (m_window.getSize().y -16) + 16;
+
+	entity->cTransform = std::make_shared<CTransform>(Vec2(ex, ey), Vec2(0.f, 0.f), 0.f);
+
+	entity->cShape = std::make_shared<CShape>(16.f, 3, sf::Color(10, 10, 10), sf::Color(0, 0, 255), 2.f);
+
+	entity->cInput = std::make_shared<CInput>();
+
 	m_lastEnemySpawnTime = m_currentFrame;
 }
 

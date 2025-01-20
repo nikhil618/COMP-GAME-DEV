@@ -45,7 +45,7 @@ const EntityVector& EntityManager::getEntities()
 const EntityVector& EntityManager::getEntities(std::string &tag)
 {
 	// TODO: This is incorrect, return the correct vector from the map
-	return m_entities;
+	return m_entityMap[tag];
 }
 
 void EntityManager::removeDeadEntities(EntityVector& vector)

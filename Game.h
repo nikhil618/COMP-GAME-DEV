@@ -5,10 +5,11 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
-
 struct PlayerConfig { int SR, CR, FR, FG, FB, OR, OG, OB, OT, V; float S; };
 struct EnemyConfig { int SR, CR, OR, OG, OB, OT, VMIN, VMAX, L, SI; float SMIN, SMAX; };
 struct BulletConfig { int SR, CR, FR, FG, FB, OR, OG, OB, OT, V, L; float S; };
+struct WindowConfig { int WW, WH, FL; bool FS; };
+struct FontConfig { std::string FONT; int FS; int FR, FG, FB; };
 
 class Game
 {
@@ -19,6 +20,8 @@ class Game
 	PlayerConfig m_playerConfig;
 	EnemyConfig m_enemyConfig;
 	BulletConfig m_bulletConfig;
+	WindowConfig m_windowConfig;
+	FontConfig m_fontConfig;
 	int m_score = 0;
 	int m_currentFrame = 0;
 	int m_lastEnemySpawnTime = 0;
